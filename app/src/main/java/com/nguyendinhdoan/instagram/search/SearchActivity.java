@@ -1,4 +1,4 @@
-package com.nguyendinhdoan.instagram;
+package com.nguyendinhdoan.instagram.search;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nguyendinhdoan.instagram.R;
 import com.nguyendinhdoan.instagram.utils.BottomNavigationViewHelper;
 
 public class SearchActivity extends AppCompatActivity {

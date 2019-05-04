@@ -1,4 +1,4 @@
-package com.nguyendinhdoan.instagram;
+package com.nguyendinhdoan.instagram.home;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -7,13 +7,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nguyendinhdoan.instagram.R;
 import com.nguyendinhdoan.instagram.utils.BottomNavigationViewHelper;
 
-public class ShareActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
-    private static final String TAG = ShareActivity.class.getSimpleName();
+    private static final String TAG = HomeActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
-    private static final int ACTIVITY_NUM = 2;
+    private static final int ACTIVITY_NUM = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,9 @@ public class ShareActivity extends AppCompatActivity {
         setupBottomNavigationView();
     }
 
+    /**
+     * BottomNavigationView setup
+     */
     private void setupBottomNavigationView() {
         bottomNavigationView = findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.enabledNavigation(this, bottomNavigationView);
