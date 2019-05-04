@@ -9,11 +9,11 @@ import android.view.MenuItem;
 
 import com.nguyendinhdoan.instagram.utils.BottomNavigationViewHelper;
 
-public class HomeActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
-    private static final String TAG = HomeActivity.class.getSimpleName();
+    private static final String TAG = SearchActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
-    private static final int ACTIVITY_NUM = 0;
+    private static final int ACTIVITY_NUM = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +25,6 @@ public class HomeActivity extends AppCompatActivity {
         setupBottomNavigationView();
     }
 
-    /**
-     * BottomNavigationView setup
-     */
     private void setupBottomNavigationView() {
         bottomNavigationView = findViewById(R.id.bottomNavViewBar);
         BottomNavigationViewHelper.enabledNavigation(this, bottomNavigationView);
