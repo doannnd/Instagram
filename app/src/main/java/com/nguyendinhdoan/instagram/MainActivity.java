@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import com.nguyendinhdoan.instagram.home.HomeFragment;
@@ -67,12 +66,12 @@ public class MainActivity extends AppCompatActivity
                 return true;
             }
             case R.id.ic_alert: {
-                LikesFragment likesFragment = new LikesFragment();
+                LikesFragment likesFragment = LikesFragment.newInstance();
                 loadFragment(likesFragment);
                 return true;
             }
             case R.id.ic_android: {
-                ProfileFragment profileFragment = new ProfileFragment();
+                ProfileFragment profileFragment = ProfileFragment.newInstance();
                 loadFragment(profileFragment);
                 return true;
             }
@@ -82,7 +81,7 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * load all fragment of bottom navigation bar.
-     * @param fragment
+     * @param fragment ...
      */
     private void loadFragment(Fragment fragment) {
         Log.d(TAG, "loadFragment() called with: fragment = [" + fragment + "]");
