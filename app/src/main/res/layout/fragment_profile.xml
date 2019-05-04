@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include layout="@layout/app_bar_home" />
-
-    <include layout="@layout/content_home" />
+    <include layout="@layout/app_bar_profile" />
 
 </android.support.design.widget.CoordinatorLayout>
